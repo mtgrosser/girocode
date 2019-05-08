@@ -1,7 +1,7 @@
 [![Gem Version](https://badge.fury.io/rb/girocode.svg)](http://badge.fury.io/rb/girocode) [![Build Status](https://travis-ci.org/mtgrosser/girocode.svg)](https://travis-ci.org/mtgrosser/girocode)
 # Girocode - create EPC QR codes for SEPA bank transfers
 
-Generate QR codes in SVG, PNG, HTML or ASCII format
+Pure Ruby library to generate QR codes in SVG, PNG, HTML or ASCII format
 
 ![Girocode](https://raw.githubusercontent.com/mtgrosser/girocode/master/test/demo.png)
 
