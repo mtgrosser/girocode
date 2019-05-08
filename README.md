@@ -42,3 +42,10 @@ Codes can be generated with the following attributes:
 | creditor_reference | ISO-11649 creditor reference   | unless `reference`          | 35       |
 | reference          | Unstructured reference         | unless `creditor_reference` | 140      |
 | bto_info           | Beneficiary to originator info |                             | 70       |
+
+
+## Specification
+
+European Payments Council: Quick Response Code
+
+[Guidelines to enable data capture for the initiation of a SEPA credit transfer](https://www.europeanpaymentscouncil.eu/sites/default/files/kb/file/2018-05/EPC069-12%20v2.1%20Quick%20Response%20Code%20-%20Guidelines%20to%20Enable%20the%20Data%20Capture%20for%20the%20Initiation%20of%20a%20SCT.pdf)
