@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.summary       = %q{Generate QR codes for SEPA credit transfers}
   s.description   = %q{EPC QR code for SEPA payments in any format}
   s.homepage      = 'https://github.com/mtgrosser/girocode'
+  s.licenses      = ['MIT']
 
   s.files         = Dir['{lib}/**/*.rb', 'LICENSE', 'README.md', 'CHANGELOG', 'Rakefile']
   s.require_paths = ['lib']
