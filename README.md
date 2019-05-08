@@ -29,6 +29,8 @@ code.to_ascii
 puts code.to_ansi
 ```
 
+## Supported attributes
+
 Codes can be generated with the following attributes:
 
 | Attribute          | Description                    | required                    | max size |
@@ -43,6 +45,9 @@ Codes can be generated with the following attributes:
 | reference          | Unstructured reference         | unless `creditor_reference` | 140      |
 | bto_info           | Beneficiary to originator info |                             | 70       |
 
+## Limitations
+
+Codes are generated as EPC-QR Version 2 in UTF-8 format only.
 
 ## Specification
 
