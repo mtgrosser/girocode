@@ -33,17 +33,17 @@ puts code.to_ansi
 
 Codes can be generated with the following attributes:
 
-| Attribute          | Description                    | required                    | max size |
-|--------------------|--------------------------------|-----------------------------|----------|
-| bic                | Bank Identifier Code           |                             | 11       |
-| name               | Name of beneficiary            | ✓                           | 70       |
-| iban               | IBAN                           | ✓                           | 34       |
-| currency           | ISO-4217 currency code         | if `amount` given           | 3        |
-| amount             | Money amount                   |                             | 12       |
-| purpose            | SEPA purpose code              |                             | 4        |
-| creditor_reference | ISO-11649 creditor reference   | unless `reference`          | 35       |
-| reference          | Unstructured reference         | unless `creditor_reference` | 140      |
-| bto_info           | Beneficiary to originator info |                             | 70       |
+| Attribute            | Description                    | required                    | max size |
+|----------------------|--------------------------------|-----------------------------|----------|
+| `bic`                | Bank Identifier Code           |                             | 11       |
+| `name`               | Name of beneficiary            | ✓                           | 70       |
+| `iban`               | IBAN                           | ✓                           | 34       |
+| `currency`           | ISO-4217 currency code         | if `amount` given           | 3        |
+| `amount`             | Money amount                   |                             | 12       |
+| `purpose`            | SEPA purpose code              |                             | 4        |
+| `creditor_reference` | ISO-11649 creditor reference   | unless `reference`          | 35       |
+| `reference`          | Unstructured reference         | unless `creditor_reference` | 140      |
+| `bto_info`           | Beneficiary to originator info |                             | 70       |
 
 ## Limitations
 
