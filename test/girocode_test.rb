@@ -7,7 +7,7 @@ class GirocodeTest < Minitest::Test
 
   def test_girocode
     attrs = { bic: 'BHBLDEHHXXX', name: 'Franz Mustermänn', iban: 'DE71110220330123456789', currency: :eur, amount: 12.3, purpose: 'GDDS', creditor_reference: 'RF18539007547034' }
-    code = Girocode.new(attrs)
+    code = Girocode.new(**attrs)
     assert_equal data(:data), code.to_ascii
   end
   
