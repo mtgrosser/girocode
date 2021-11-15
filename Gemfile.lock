@@ -12,7 +12,7 @@ GEM
     chunky_png (1.4.0)
     docile (1.4.0)
     minitest (5.14.4)
-    rake (10.5.0)
+    rake (13.0.6)
     rqrcode (2.1.0)
       chunky_png (~> 1.0)
       rqrcode_core (~> 1.0)
