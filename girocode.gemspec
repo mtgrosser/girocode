@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/mtgrosser/girocode'
   s.licenses      = ['MIT']
 
-  s.files         = Dir['{lib}/**/*.rb', 'LICENSE', 'README.md', 'CHANGELOG', 'Rakefile']
+  s.files         = Dir['{lib}/**/*.rb', 'LICENSE', 'README.md', 'CHANGELOG.md']
   s.require_paths = ['lib']
 
   s.add_dependency 'rqrcode'
