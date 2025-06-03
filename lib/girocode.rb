@@ -1,5 +1,5 @@
 require 'bigdecimal'
-require 'bank/contact'
+require 'iban-tools'
 require 'rqrcode'
 
 require_relative 'girocode/version'
