@@ -3,6 +3,7 @@ require 'iban-tools'
 require 'rqrcode'
 
 require_relative 'girocode/version'
+require_relative 'girocode/bic'
 require_relative 'girocode/code'
 
 module Girocode

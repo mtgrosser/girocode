@@ -23,10 +23,10 @@ module Girocode
     def bic=(value)
       if value.nil?
         @bic = nil
-      elsif value.match? /\A[A-Z0-9]{4}([A-Z]{2})([A-Z0-9]{2})([A-Z0-9]{3})?\z/
-        @bic = value
       else
-        raise ArgumentError, "Invalid BIC #{value.inspect}"
+        bic = BIC.new(value)
+        raise ArgumentError, "Invalid BIC #{value.inspect}" unless bic.valid?
+        @bic = bic.to_s
       end
     end
 

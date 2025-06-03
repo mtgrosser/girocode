@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.files         = Dir['{lib}/**/*.rb', 'LICENSE', 'README.md', 'CHANGELOG.md']
   s.require_paths = ['lib']
 
+  s.add_dependency 'bigdecimal'
   s.add_dependency 'rqrcode'
   s.add_dependency 'iban-tools'
 end

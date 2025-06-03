@@ -1,13 +1,15 @@
 PATH
   remote: .
   specs:
-    girocode (0.2.0)
+    girocode (1.0.0)
+      bigdecimal
       iban-tools
       rqrcode
 
 GEM
   remote: https://rubygems.org/
   specs:
+    bigdecimal (3.2.1)
     chunky_png (1.4.0)
     docile (1.4.1)
     iban-tools (1.2.1)
@@ -32,6 +34,3 @@ DEPENDENCIES
   minitest
   rake
   simplecov
-
-BUNDLED WITH
-   2.6.8
