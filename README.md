@@ -33,17 +33,27 @@ puts code.to_ansi
 
 Codes can be generated with the following attributes:
 
-| Attribute            | Description                    | required           | exclusive | max size |
-|----------------------|--------------------------------|--------------------|-----------|----------|
-| `bic`                | Bank Identifier Code           |                    |           | 11       |
-| `name`               | Name of beneficiary            | ✓                  |           | 70       |
-| `iban`               | IBAN                           | ✓                  |           | 34       |
-| `currency`           | ISO-4217 currency code         | if `amount` given  |           | 3        |
-| `amount`             | Money amount                   |                    |           | 12       |
-| `purpose`            | SEPA purpose code              |                    |           | 4        |
-| `creditor_reference` | ISO-11649 creditor reference   |                    | ✓         | 35       |
-| `reference`          | Unstructured reference         |                    | ✓         | 140      |
-| `bto_info`           | Beneficiary to originator info |                    |           | 70       |
+| Attribute            | Description                           | required           | exclusive | max size |
+|----------------------|---------------------------------------|--------------------|-----------|----------|
+| `bic`                | Bank Identifier Code                  |                    |           | 11       |
+| `name`               | Name of beneficiary                   | ✓                  |           | 70       |
+| `iban`               | IBAN                                  | ✓                  |           | 34       |
+| `currency`           | ISO-4217 currency code                | if `amount` given  |           | 3        |
+| `amount`             | Money amount                          |                    |           | 12       |
+| `purpose`            | SEPA purpose code                     |                    |           | 4        |
+| `creditor_reference` | ISO-11649 creditor reference          |                    | ✓         | 35       |
+| `reference`          | Unstructured reference ("remittance") |                    | ✓         | 140      |
+| `bto_info`           | Beneficiary to originator info        |                    |           | 70       |
+
+## QR code generation options
+
+All `to_<format>` methods forward options to `RQRCode`. You can therefore supply all supported options to the respective generator, e.g.
+
+```ruby
+code.to_svg(fill: :white, color: :blue, module_size: 20)
+```
+
+Check the [RQRCode docs](https://github.com/whomwah/rqrcode) for all available options.
 
 ## Limitations
 
@@ -53,4 +63,4 @@ Codes are generated as EPC-QR Version 2 in UTF-8 format only.
 
 European Payments Council: Quick Response Code
 
-[Guidelines to enable data capture for the initiation of a SEPA credit transfer](https://www.europeanpaymentscouncil.eu/sites/default/files/kb/file/2018-05/EPC069-12%20v2.1%20Quick%20Response%20Code%20-%20Guidelines%20to%20Enable%20the%20Data%20Capture%20for%20the%20Initiation%20of%20a%20SCT.pdf)
+[Guidelines to enable data capture for the initiation of a SEPA credit transfer](https://www.europeanpaymentscouncil.eu/sites/default/files/kb/file/2024-03/EPC069-12%20v3.1%20Quick%20Response%20Code%20-%20Guidelines%20to%20Enable%20the%20Data%20Capture%20for%20the%20Initiation%20of%20an%20SCT.pdf)
