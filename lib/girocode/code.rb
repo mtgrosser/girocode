@@ -94,8 +94,8 @@ module Girocode
 
     def payload
       ['BCD', '002', '1', 'SCT',
-       bic, name, iban,formatted_amount, purpose,
-       creditor_reference || reference, bto_info].map(&:to_s).join("\n")
+       bic, name, iban, formatted_amount, purpose,
+       creditor_reference, reference, bto_info].map(&:to_s).join("\n").rstrip
     end
 
     def to_qrcode
