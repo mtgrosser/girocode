@@ -59,7 +59,7 @@ module Girocode
 
     def purpose=(value)
       unless value.nil?
-        raise ArgumentError, "invalid purpose #{value.inspect}" unless value.match?(/\A[A-z0-9]{0,4}\z/)
+        raise ArgumentError, "invalid purpose #{value.inspect}" unless value.match?(/\A[A-Za-z0-9]{0,4}\z/)
       end
       @purpose = value
     end
