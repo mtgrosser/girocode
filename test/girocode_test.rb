@@ -30,4 +30,10 @@ class GirocodeTest < Minitest::Test
     end
   end
 
+  def test_purpose_rejects_gap_characters
+    assert_raises ArgumentError do
+      Girocode.new(bic: 'BHBLDEHHXXX', name: 'Franz Mustermann', iban: 'DE71110220330123456789', currency: :eur, amount: 12.3, purpose: '[')
+    end
+  end
+
 end
