@@ -1,3 +1,7 @@
+## 1.2.0
+
+- Reject SEPA purpose codes that sit between Z and a (@SashaMIT)
+
 ## 1.1.0
 
 - Fix `reference` / `creditor_reference` confusion (@arfl)
